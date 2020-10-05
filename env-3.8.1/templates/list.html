@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>数据展示</title>
+</head>
+<body>
+    全部获得Truth:
+    
+<table class="table" border="1">
+  <caption>基本的表格布局</caption>
+  <thead>
+    <tr>
+      <th>id</th>
+      <th>Truth</th>
+      <th>reason</th>
+    </tr>
+  </thead>
+  <tbody>    
+        {% for list_1 in  list %}
+        <tr>
+        <td>{{ list_1.id }}</td>
+        <td>{{ list_1.Truth }}</td>
+        <td>{{ list_1.reason }}</td>
+        </tr>
+        {% endfor %}
+
+  </tbody>
+</table>
+
+
+</body>
+</html>
+
